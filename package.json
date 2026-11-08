@@ -1,0 +1,20 @@
+{
+  "name": "vues-eclatees-claude",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vues éclatées 3D en motion design, écrites en code par Claude (Remotion).",
+  "scripts": {
+    "audio": "node src/anatomy/make-audio.mjs && node src/lock/make-audio.mjs && node src/watch/make-audio.mjs && node src/gpu/make-audio.mjs",
+    "studio": "remotion studio src/index.ts",
+    "render:manette": "remotion render src/index.ts Manette out/manette.mp4 --crf=20",
+    "render:serrure": "remotion render src/index.ts Serrure out/serrure.mp4 --crf=20",
+    "render:montre": "remotion render src/index.ts Montre out/montre.mp4 --crf=20",
+    "render:carte-graphique": "remotion render src/index.ts CarteGraphique out/carte-graphique.mp4 --crf=20"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.541",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.541"
+  }
+}
