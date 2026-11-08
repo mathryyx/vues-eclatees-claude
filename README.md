@@ -1,6 +1,6 @@
 # Vues éclatées, écrites par Claude
 
-Une série de vidéos de motion design en 3D isométrique (une serrure, une montre mécanique, une carte graphique, une manette), entièrement écrites en code par Claude, avec [Remotion](https://github.com/remotion-dev/remotion).
+Une série de vidéos de motion design en 3D isométrique (une serrure, une montre mécanique, une carte graphique, une manette, un burger), entièrement écrites en code par Claude, avec [Remotion](https://github.com/remotion-dev/remotion).
 
 - Pas de Blender, pas d'After Effects.
 - Le moteur 3D (projection, tri en profondeur, traits) est écrit à la main dans chaque dossier : `engine.ts`.
@@ -17,7 +17,7 @@ Il faut Node 18 ou plus récent.
 npm install
 npm run audio          # fabrique les sons dans public/
 npm run studio         # ouvre l'aperçu dans le navigateur
-npm run render:serrure # ou :montre, :carte-graphique, :manette
+npm run render:serrure # ou :montre, :carte-graphique, :manette, :burger
 ```
 
 Les vidéos sortent dans `out/`. Au premier rendu, Remotion télécharge son propre navigateur de rendu.
@@ -30,6 +30,7 @@ Les vidéos sortent dans `out/`. Au premier rendu, Remotion télécharge son pro
 | `src/lock/` | Serrure à goupilles, en coupe puis éclatée (FIG. 02) | `Serrure` |
 | `src/watch/` | Montre mécanique (FIG. 03) | `Montre` |
 | `src/gpu/` | Carte graphique (FIG. 04) | `CarteGraphique` |
+| `src/burger/` | Le burger parfait (FIG. 05) | `Burger` |
 
 Dans chaque dossier :
 - `model.ts` : l'objet, pièce par pièce ;
